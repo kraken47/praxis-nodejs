@@ -39,7 +39,7 @@ Ayo bantu Lucinta untuk membuat SIAK dengan ketentuan sebagai berikut:
 ## :dancer: Let's get the things done, have fun! :man_dancing: 
 
 
-Hasil project dikumpulkan di melalui repo ini dengan branch nama masing-masing. 
+Hasil project dikumpulkan melalui repo ini dengan branch nama masing-masing. 
 <br><sup>* *Disclaimer:* nama tokoh atau instanasi hanya fiktif belaka</sup>
 
 <p align="center">  <img src="https://media.tenor.com/images/5df2ae103bd507ca686e7c267bc27a38/tenor.gif">  </p>
