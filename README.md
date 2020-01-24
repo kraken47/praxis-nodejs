@@ -1,5 +1,5 @@
 # :dart: Challange of The Week 
-Lucinta adalah seorang staff TU Fakultas Teknik Universitas Muhmmad Fattah di Jakarta Selatan. Dalam kesehariannya Lucinta berurusan dengan banyak data yang berkaitan dengan mahasiswa, dosen, mata kuliah, dan nilai. Suatu hari Lucinta memiliki ide untuk membuat Sistem Informasi Akademis Kampus (SIAK) untuk memudahkan pekerjaanya. 
+<p>Lucinta adalah seorang staff TU Fakultas Teknik Universitas Muhmmad Fattah di Jakarta Selatan. Dalam kesehariannya Lucinta berurusan dengan banyak data yang berkaitan dengan mahasiswa, dosen, mata kuliah, dan nilai. Suatu hari Lucinta memiliki ide untuk membuat Sistem Informasi Akademis Kampus (SIAK) untuk memudahkan pekerjaanya. 
 
 Ayo bantu Lucinta untuk membuat SIAK dengan ketentuan sebagai berikut:
 1. *Database* memiliki *collection* Users, Roles, Reset_Passwords, Subjects, dan Credits.
@@ -34,7 +34,7 @@ Ayo bantu Lucinta untuk membuat SIAK dengan ketentuan sebagai berikut:
 		- score_uas (number)
 		- score_uts (number)
 		- score_final (string)
-
+</p>
 
 ## :dancer: Let's get the things done, have fun! :man_dancing: 
 
