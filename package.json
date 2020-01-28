@@ -1,0 +1,36 @@
+{
+  "name": "praxis-nodejs",
+  "version": "1.0.0",
+  "description": "Lucinta adalah seorang staff TU Fakultas Teknik Universitas Muhmmad Fattah di Jakarta Selatan. Dalam kesehariannya Lucinta berurusan dengan banyak data yang berkaitan dengan mahasiswa, dosen, mata kuliah, dan nilai. Suatu hari Lucinta memiliki ide untuk membuat Sistem Informasi Akademis Kampus (SIAK) untuk memudahkan pekerjaanya.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kraken47/praxis-nodejs.git"
+  },
+  "author": "Praxis_Academy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kraken47/praxis-nodejs/issues"
+  },
+  "homepage": "https://github.com/kraken47/praxis-nodejs#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "mongoose": "^5.8.10",
+    "nodemailer": "^6.4.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
