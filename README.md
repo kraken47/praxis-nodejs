@@ -1,47 +1,53 @@
-# :dart: Challange of The Week 
-<p>Lucinta adalah seorang staff TU Fakultas Teknik Universitas Muhmmad Fattah di Jakarta Selatan. Dalam kesehariannya Lucinta berurusan dengan banyak data yang berkaitan dengan mahasiswa, dosen, mata kuliah, dan nilai. Suatu hari Lucinta memiliki ide untuk membuat Sistem Informasi Akademis Kampus (SIAK) untuk memudahkan pekerjaanya. 
+## Example Mini-Project with Express
 
-Ayo bantu Lucinta untuk membuat SIAK dengan ketentuan sebagai berikut:
-1. *Database* memiliki *collection* Users, Roles, Reset_Passwords, Subjects, dan Credits.
-2. *Collection* Users akan digunakan untuk menampung data mahasiswa, dosen, dan staff adminisitrasi kampus. memiliki atribut seperti berikut:<br>
-		- name (string, required)<br>
-		- email (string, required, unique)<br>
-		- username (string, required, unique)<br>
-		- role_id (string, required)<br>
-		- password (string, required)<br>
-		- handphone (string)<br>
-		- created_at (date)<br>
-		- updated_at (date)<br>
-		- deleted_at (date)<br>
-3. *Collection* Roles akan digunakan untuk menampung hak akses dengan ketentuan: <br>
-		- Role Mahasiswa: hanya bisa login dan melihat (*listing)* jadwal mata kuliah dan nilai.<br>
-		- Role Dosen: bisa melakukan CRUD mata kuliah dan nilai.<br>
-		- Role Staff_admin: Hanya bisa membuat CRUD user untuk dosen dan mahasiswa.<br>
-4. Collection* Reset_Passwords akan digunakan untuk data sementara yang dibutuhkan untuk keperluan reset password dengan ketentuan: <br>
-		- Forgot password membutuhkan user menginput emailnya untuk meminta token reset.<br>
-		- Token dikirimkan ke email (disarankan memakai mailtrap.io) user untuk dipakai menguah password.<br>
-		- Setelah password dirubah, user akan diperlihatkan password barunya.<br>
-5. Collection* Subjects akan digunakan untuk menampung informasi terkait mata kuliah. *Collection* tersebut memiliki ketentuan sebagai berikut: <br>
-		- name (string, required)<br>
-		- code (string, misal: Interaksi Manusia & Komputer ada di semester 4 :arrow_right: IMK4 )<br>
-		- semester (number)<br>
-		- lecturer_id (string)<br>
-		- sks (number)<br>
-		- credit_id (string)<br>
-6.  Collection* Credits akan digunakan untuk data nilai mata kuliah yang diperoleh mahasiswa dengan ketentuan: <br>
-		- subject_id (string)<br>
-		- user_id (string, berisi ObjectId user yang memiliki role sebagai mahasiswa)<br>
-		- score_uas (number)<br>
-		- score_uts (number)<br>
-		- score_final (string)<br>
-</p>
+Berikut adalah simple **Mini project** Sistem Akademik Sekolah studi kasus from [kraken47](https://bit.ly/326ShGb) and [Praxis Academy](https://pandao.github.io/editor.md/en.html)
 
-## :dancer: Let's get the things done, have fun! :man_dancing: 
+#### Cara Menjalankan:
+- install semua module dengan mengetikan `npm install` pada terminal
+- jalankan dengan mengetik `npm run dev` atau `yarn run dev` pada terminal
 
+#### Features:
 
-Hasil project dikumpulkan melalui repo ini dengan branch nama masing-masing. 
-<br><sup>* *Disclaimer:* nama tokoh atau instanasi hanya fiktif belaka</sup>
+- [x] **Advanced Login and Register**
+- [x] **Forgot and Reset Password**
+- [x] **Activation Token Login with Sendgrind Email**
+- [x] **Resend Token Activation**
+- [x] **Automatic Expired Token login**
+- [x] **Automatic Random Token Activation**
+- [x] **Encryption Password**
+- [x] **Custome Message Error and Success**
+- [x] **Custome Email Template and Reset Password Template**
+- [x] **Auth with JWT and Auth with Role Permission**
+- [x] **Service Worker Multi Tread Core**
+- [x] **Any More**
 
-<p align="center">  <img src="https://media.tenor.com/images/5df2ae103bd507ca686e7c267bc27a38/tenor.gif">  </p>
+#### Endpoits:
 
-
+| Name | Route Name | Request Method |
+| ----------------------- | ------------------| ------------------- |
+|  Register | http://localhost:3000/register | POST
+|  Login | http://localhost:3000/login | POST
+|  Activation Token | http://localhost:3000/activation  | GET
+|  Resend Token | http://localhost:3000/resendtoken  | GET
+| Forgot Password |  http://localhost:3000/forgotpassword | POST
+| Reset Password | http://localhost:3000/resetpassword | POST
+|  **User Create** | http://localhost:3000/user/create | **POST**
+|  User Results | http://localhost:3000/user/results | GET
+|  User Result | http://localhost:3000/user/result/:id | GET
+|  User Delete | http://localhost:3000/user/delete/:id | DELETE
+|  User Update | http://localhost:3000/user/update/:id | PUT
+|  **Role Create** | http://localhost:3000/role/create | **POST**
+|  Role Results | http://localhost:3000/role/results  | GET
+|  Role Result | http://localhost:3000/role/result/:id  | GET
+|  Role Delete | http://localhost:3000/role/delete/:id | DELETE
+|  Role Update | http://localhost:3000/role/update/:id | PUT
+|  **Subject Create** | http://localhost:3000/subject/create | **POST**
+|  Subject Results | http://localhost:3000/role/subject/results | GET
+|  Subject Result | http://localhost:3000/role/subject/result/:id  | GET
+|  Subject Delete | http://localhost:3000/role/subject/delete/:id | DELETE
+|  Subject Update | http://localhost:3000/role/subject/update/:id  | PUT
+|  **Credit Create** | http://localhost:3000/credit/create | **POST**
+|  Credit Results | http://localhost:3000/role/credit/results  | GET
+|  Credit Result | http://localhost:3000/role/credit/result/:id | GET
+|  Credit Delete | http://localhost:3000/role/credit/delete/:id | DELETE
+|  Credit Update | http://localhost:3000/role/credit/update/:id  | PUT
